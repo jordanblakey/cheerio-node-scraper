@@ -25,3 +25,4 @@ module.exports = potusParse;
 //   console.log($('.firstHeading', h).text());
 //   console.log($('.bday', h).text());
 // });
+// Adding a note.
