@@ -19,3 +19,7 @@ await page.focus('#password')
 await page.keyboard.type(config.password)
 
 await page.click('#authenticate')
+
+
+
+
