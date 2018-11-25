@@ -19,3 +19,24 @@ const getPDF = async (url, path = 'scraped_page.pdf', format = 'A4') => {
 };
 
 getPDF('https://example.com');
+
+const getRepos = async () => {
+  const browser = await puppeteer.launch();
+  const page = await browser.newPage();
+  await page.goto('https://github.com/jordanblakey?tab=repositories', {
+    waitUntil: 'networkidle2'
+  });
+  await page.waitForSelector('#user-repositories-list li');
+
+  var tmp = await page.evaluate(() => {
+    var repos = document.querySelectorAll('#user-repositories-list li h3 a');
+    return Array.from(repos).map(repo => {
+      return repo.href;
+    });
+  });
+
+  console.log(tmp);
+  await browser.close();
+};
+
+getRepos();
