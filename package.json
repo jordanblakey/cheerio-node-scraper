@@ -1,0 +1,12 @@
+{
+  "name": "cheerio-scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jordan Blakey <jordan.t.blakey@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
