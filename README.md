@@ -1,4 +1,4 @@
-# Pupeteer + Cheerio Node Web Scraping
+# Puppeteer + Cheerio Node Web Scraping
 
 ## Cheerio Basic Usage
 
